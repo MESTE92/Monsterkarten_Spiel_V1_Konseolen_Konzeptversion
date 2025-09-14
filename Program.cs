@@ -1754,8 +1754,8 @@ namespace Monster_Arena
                     switch (Kampfwürfel_Ergebnis_des_Gegners)
                     {
                         case 1: Kommentar = "Leider Daneben, der Gegner ist ausgewichen ....."; break;
-                        case 2: Kommentar = "Leider Daneben, der Gegner ist ausgewichen ....."; break;
-                        case 3: Kommentar = "Leider Daneben, der Gegner ist ausgewichen ....."; break;
+                        case 2: Kommentar = $"{Spieler_Monster.name} wurde getroffen!"; break;
+                        case 3: Kommentar = $"{Spieler_Monster.name} wurde getroffen!"; break;
 
                         case 4: Kommentar = $"{Spieler_Monster.name} wurde getroffen!"; break;
                         case 5: Kommentar = $"{Spieler_Monster.name} wurde getroffen!"; break;
@@ -1951,7 +1951,7 @@ namespace Monster_Arena
                 SchreibeZentriert("\n\n");
                 Thread.Sleep(300);
                 Ladebalken_XP_EP_Verteilung(70, 60);
-                Thread.Sleep(300);
+                Thread.Sleep(3000);
                 Console.Write("\n\n");
                 SchreibeZentriert($"Für diesen Kampf erhälst du 200 EP und 100 XP");
                 user.XP_Points = user.XP_Points + 100;
